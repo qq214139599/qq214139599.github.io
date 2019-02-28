@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>ubuntu18-华硕飞行堡垒安装</title>
+      <link href="/2019/02/28/ubuntu18-%E5%8D%8E%E7%A1%95%E9%A3%9E%E8%A1%8C%E5%A0%A1%E5%9E%92%E5%AE%89%E8%A3%85/"/>
+      <url>/2019/02/28/ubuntu18-%E5%8D%8E%E7%A1%95%E9%A3%9E%E8%A1%8C%E5%A0%A1%E5%9E%92%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装需要注意"><a href="#安装需要注意" class="headerlink" title="安装需要注意"></a>安装需要注意</h3><ol><li>重启电脑按esc键，选择进bios，确保secure boot是关闭的。</li><li>进入 grub 页面时选择 install ubuntu，不要按 enter, 按 e 进入编辑模式，找到quiet splash，删除—，在后面输入 <code>acpi_osi=! acpi_osi=LINUX</code>，按 F10 保存进入安装界面，这时分辨率是不正确的，这个是正常的。等安装完 N 卡驱动就好了。</li><li>正常执行安装步骤即可。</li><li>安装完毕重启后进系统时还需要进 grub 编辑，添加<code>acpi_osi=! acpi_osi=LINUX</code>。如果嫌麻烦的话可以编辑 /etc/default/grub 文件，添加 GRUB_CMDLINE_LINUX=“acpi_osi=! acpi_osi=LINUX”。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+          <category> Ubuntu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo 标签云</title>
       <link href="/2019/02/27/Hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/"/>
       <url>/2019/02/27/Hexo-%E6%A0%87%E7%AD%BE%E4%BA%91/</url>
